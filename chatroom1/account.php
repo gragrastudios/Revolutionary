@@ -29,7 +29,6 @@ if ($usercount == '0') { ?>
 <?php 
 }else {
     echo 'User found, loading chat room...';
-    $_SESSION["loggedin"] = 'yes';
     //$_SESSION["id"] = $user['id'];
     header("Location: /chatroom1/list.php");
     exit();
