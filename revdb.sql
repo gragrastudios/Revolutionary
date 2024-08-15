@@ -33,15 +33,6 @@ CREATE TABLE `accounts` (
   `ip` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
---
--- Dumping data for table `accounts`
---
-
-INSERT INTO `accounts` (`id`, `name`, `ip`) VALUES
-(1, 'turbozap1', 'f1a78feb35c4016c23867527f71af45a'),
-(5, 'Sigmadop ', 'a82611851cf7db3395c38780572125cb'),
-(6, 'sigmadopdop2', '837ec5754f503cfaaee0929fd48974e7');
-
 -- --------------------------------------------------------
 
 --
@@ -55,22 +46,6 @@ CREATE TABLE `chatrooms` (
   `creator` longtext NOT NULL,
   `creatorid` longtext NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `chatrooms`
---
-
-INSERT INTO `chatrooms` (`id`, `name`, `people`, `creator`, `creatorid`) VALUES
-(0, 'testroom1', '0', 'turbozap1', '1'),
-(2, 'testroom2', '0', 'turbozap1', '1'),
-(3, 'testroom1', '0', 'turbozap1', '1'),
-(4, 'testroom1', '0', 'turbozap1', '1'),
-(5, 'testroom1', '0', 'turbozap1', '1'),
-(6, 'testroom1', '0', 'turbozap1', '1'),
-(7, 'testroom1', '0', 'turbozap1', '1'),
-(8, 'testroom1', '0', 'turbozap1', '1'),
-(9, 'testroom1', '0', 'turbozap1', '1'),
-(10, 'testroom1', '0', 'turbozap1', '1');
 
 -- --------------------------------------------------------
 
